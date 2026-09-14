@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffeaf5;
+
+    margin: 0;
+    padding-top: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    position: relative;
+    min-height: 100vh;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("bilder/blumi.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+opacity: 0.35;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+button {
+    display: block;
+
+    width: 100%;
+    max-width: 320px;
+
+    padding: 12px;
+    margin: 10px auto;
+
+    font-size: 16px;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+}
+
+img {
+    display: block;
+
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+
+    margin: 20px auto;
+
+    border-radius: 20px;
+}
